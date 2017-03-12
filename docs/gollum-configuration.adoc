@@ -1,0 +1,7 @@
+== The Gollum Configuration
+
+.config.rb
+[source,linenums]
+----
+include::../src/config.rb[]
+----

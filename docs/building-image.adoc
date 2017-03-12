@@ -1,0 +1,20 @@
+== Building the Docker Image
+
+Once we have the configuration defined, we need to get it to work with Docker. Dan Tehranian has a blog post titled: https://dantehranian.wordpress.com/2015/03/25/how-should-i-get-application-configuration-into-my-docker-containers/[How Should I Get Application Configuration into my Docker Containers?]
+
+Download the src directory of this project. Start a command prompt in this directory.
+Enter the following command to build an image from the Dockerfile with a tagname of __gollum__
+
+----
+D:\...\src> docker build -t gollum .
+----
+
+=== Docker build file
+
+This is the contents of the build file:
+
+.Dockerfile
+[source,linenums]
+----
+include::../src/Dockerfile[]
+----

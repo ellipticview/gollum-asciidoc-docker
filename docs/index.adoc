@@ -1,0 +1,25 @@
+= Building a Docker Container for Gollum to run an Asciidoc Wiki
+
+:doctype: book
+:encoding: utf-8
+:lang: en
+:toc: left
+:toclevels: 2
+:numbered:
+
+== Introduction
+If you are authoring a book in Asciidoc, in git and on Windows then you have many choices for editors. Gollum is one of these choices. Packaging and running Gollum in a Docker container makes it a little easier compared to other installation options.
+
+This document describes how to build and run a Docker container on Windows.
+
+include::install-Docker.adoc[]
+
+include::install-git.adoc[]
+
+include::gollum-configuration.adoc[]
+
+include::building-image.adoc[]
+
+include::running-gollum.adoc[]
+
+include::asciidoc-issues.adoc[]

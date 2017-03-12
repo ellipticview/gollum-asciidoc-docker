@@ -1,0 +1,24 @@
+== Installing Git
+
+There are many ways to install Git on Windows, which James Sturtevant http://www.jamessturtevant.com/posts/5-Ways-to-install-git-on-Windows/[summarizes very nicely].
+I recommend using Chocolatey.
+
+=== Setting your username and email address
+You need to set your username and email address, because this is what Gollum uses when committing changes. Git uses your username to associate commits with an identity.
+
+To display your current settings:
+----
+D:\> git config user.name
+D:\> git config user.email
+----
+
+To set for the current repository only, execute these commands in the root of the repository:
+----
+D:\> git config user.name "John Doe"
+D:\> git config user.email johndoe@example.com
+----
+To set globally:
+----
+D:\> git config --global user.name "John Doe"
+D:\> git config --global user.email johndoe@example.com
+----

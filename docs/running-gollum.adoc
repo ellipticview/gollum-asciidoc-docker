@@ -1,0 +1,37 @@
+== Running Gollum
+
+=== Prepare the wiki directory
+Create a directory, e.g. named `mywiki`.
+Make it a git repository:
+----
+D:\...\mywiki> git init
+----
+
+Set your git username and email, if you haven't already set it globally.
+
+=== Start Gollum
+Run the container:
+----
+D:\...\wiki> docker run -v %cd%:/wiki -p 4567:80 gollum
+----
+
+
+.Docker run options
+[width="100%",options="header", cols="1,2,6"]
+|====================
+| Option | Meaning | Notes 
+
+| -v
+| volume
+| This will bind our current folder as a symlink to the container's `/wiki` folder. Note that `%cd%` indicates the current directory.
+
+| -p
+| port
+| Forward port `80` of the container to port `4567`  (Gollum's default)
+|====================
+
+
+=== Accessing the Gollum GUI
+
+Access the GUI using the web browser at http://127.0.0.1:4567/[http://127.0.0.1:4567] .
+

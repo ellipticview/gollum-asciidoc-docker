@@ -1,0 +1,7 @@
+= Building a Docker Container for Gollum to run an Asciidoc Wiki
+
+This document describes how to build a Docker container on Windows for Gollum. This container is configured to support one markup format: Asciidoc only.
+
+See further information in the docs directory.
+
+

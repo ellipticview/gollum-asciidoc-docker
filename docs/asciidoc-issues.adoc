@@ -1,0 +1,9 @@
+== Asciidoc Issues
+
+Gollum was initially built for Markdown; Asciidoc support was added later. So there are several issues regarding Asciidoc support that affect its useability.
+
+This list is ordered by importance.
+
+. Poor support for Asciidoc include syntax. https://github.com/gollum/gollum/issues/1010[#1010]
+. The buttons in the editor produce markdown instead of asciidoc. https://github.com/gollum/gollum/issues/1202[#1202]
+. After a page is created, the status line confusingly says: "Created pagename (markdown)". https://github.com/gollum/gollum/issues/1203[#1203]
